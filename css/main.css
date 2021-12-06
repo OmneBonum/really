@@ -46,6 +46,22 @@ a img {
 }
 /* END RESET*/
 
+/*FRAME STYLES*/
+#wrapper {
+    text-align: center;
+}
+
+#wrapper iframe {
+    /*display: inline-block;*/
+}
+iframe{
+    border:4px solid black;
+    flex: 1;
+    /*text-align: center;
+    position: relative;
+    left: 50%;*/
+}
+
 /* GLOBAL STYLES */
 html {
   box-shadow: 0 0 0 30px #000 inset;
@@ -79,8 +95,21 @@ h4 {
   font-weight: bold;
   text-transform: uppercase;
 }
+h5 {
+  font-size: 9vw;
+}
+h6 {
+  margin-top: 1em;
+  font-size: 1em;
+}
+h7 {
+    margin-left: 1em;
+    margin-bottom: 40px;
+    font-size: 2em;
+}
 a {
-  color: #6397b5;
+  color: rgb(9, 36, 133);
+  font: 15px Arial, sans-serif;
 }
 p {
   line-height: 1.5;
@@ -340,7 +369,11 @@ h2 ~ p {
   width: 0;
 }
 .hero-home {
-  background-image: url(/images/shark.jpg);
+  background-image: url(/images/site_cheers.jpg);
+  background-position: center top;
+}
+.hero-home-explore {
+  background-image: url(/images/site_megaphone.jpg);
   background-position: center top;
 }
 .hero-content {
@@ -354,6 +387,7 @@ h2 ~ p {
 .hero-content h1 {
   color: rgba(255, 255, 255, 0.8);
   font-size: 7vw;
+  font-weight: 900;
   margin-bottom: 0.25em;
 }
 .hero-content .social-link {
@@ -388,6 +422,23 @@ h2 ~ p {
   vertical-align: middle;
   width: 1.5em;
 }
+.social-link-other {
+  /*background: rgba(150, 150, 150, 0.5);
+  border-radius: 99px;*/
+  box-sizing: border-box;
+  color: #fff;
+  display: inline-block;
+  font-family: helvetica, arial, sans;
+  font-size: 1.7em;
+  font-weight: bold;
+  height: 2em;
+  line-height: 1;
+  padding-top: 0.25em;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  width: 2em;
+}
 .social-list {
   list-style: none;
   padding: 0;
@@ -421,24 +472,69 @@ h2 ~ p {
 }
 .home-callout {
   align-items: center;
-  background-color: #000;
-  color: #fff;
+  background-color: #fff;
+  color: #000;
   display: flex;
   padding: 7vh 0;
 }
 .callout-title {
   flex: 1;
-  font-size: 5.75vw;
+  font-size: 4.75vw;
   text-align: right;
   text-transform: uppercase;
 }
 .callout-copy {
-  flex: 0 0 45em;
-  font-size: 0.8rem;
+  /*flex: 0 0 45em;*/
+  font-size: 1rem;
+  line-height: 1.5;
   padding: 0 3vw;
 }
+<button class="button-29" role="button">Button 29</button>
 
+.button-29 {
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+}
 
+.button-29:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+.button-29:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-29:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}
 /* BIO STYLES */
 .bio-wrapper {
   font-size: 24px;
@@ -469,7 +565,7 @@ h2 ~ p {
   margin: 2em auto 1em;
 }
 .bio-copy {
-  font-size: 0.75em;
+  font-size: 1em;
 }
 
 /* GALLERY STYLES */
@@ -715,8 +811,3 @@ h2 ~ p {
     display: none;
   }
 }
-
-
-
-
-
